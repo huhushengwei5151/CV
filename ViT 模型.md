@@ -2,7 +2,7 @@
 
 ## 1. 图像预处理与 Patch 划分
 
-假设输入图像尺寸为 \(H \times W\)（例如 \(224 \times 224\)），通道数为 \(C\)（通常为 3）。ViT 首先将图像分割为固定大小的 patch，通常设定 patch 尺寸为 \(P \times P\)（例如 \(16 \times 16\)）。
+假设输入图像尺寸为 ($H \times W$)（例如$224 \times 224$，通道数为 $C$（通常为 3）。ViT 首先将图像分割为固定大小的 patch，通常设定 patch 尺寸为 $P \times P（例如 16 \times 16$）。
 
 - **Patch 数量**  
   每个方向上的 patch 数量为  $ N_h = \frac{H}{P}, \quad N_w = \frac{W}{P} 因此总 patch 数量为  N = N_h \times N_w = \frac{H \times W}{P^2}.$
